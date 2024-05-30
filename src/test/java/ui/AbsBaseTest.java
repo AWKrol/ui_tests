@@ -8,7 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 
-public abstract class AbsBaseTest {
+public abstract class AbsBaseTest{
 
   private Injector injector;
 
