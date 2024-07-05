@@ -28,22 +28,6 @@ public class WebDriverFactory implements IDriverFactory {
       default:
         throw new WebDriverNotSupportedException(BROWSER_NAME);
     }
-    //throw new WebDriverNotSupportedException(BROWSER_NAME);
   }
-
-  //    @Override
-  //    public WebDriver getDriver() throws WebDriverNotSupportedException {
-  //        switch (BROWSER_NAME.toLowerCase(Locale.ROOT)) {
-  //            case "chrome": {
-  //                WebDriverManager.chromedriver().browserVersion(browserVersion);
-  //                IWebDriverSettings<ChromeOptions> browserSettings = new ChromeSettings();
-  //                return new EventFiringWebDriver(
-  //                        (new ChromeDriver(browserSettings.getSettings()))).register(new WebDriverListener());
-  //            }
-  //            default:
-  //                throw new WebDriverNotSupportedException(BROWSER_NAME);
-  //        }
-  ////        throw new WebDriverNotSupportedException(BROWSER_NAME);
-  //    }
 
 }

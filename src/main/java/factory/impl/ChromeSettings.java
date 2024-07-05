@@ -1,6 +1,7 @@
 package factory.impl;
 
 import org.openqa.selenium.chrome.ChromeOptions;
+import java.time.Duration;
 
 public class ChromeSettings implements IWebDriverSettings<ChromeOptions> {
 
@@ -11,6 +12,7 @@ public class ChromeSettings implements IWebDriverSettings<ChromeOptions> {
     chromeOptions.addArguments("--start-maximized");
     chromeOptions.addArguments("--no-first-run");
     chromeOptions.addArguments("--homepage=about:blank");
+    chromeOptions.setPageLoadTimeout(Duration.ofSeconds(30));
 
     return chromeOptions;
   }

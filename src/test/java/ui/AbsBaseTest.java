@@ -17,7 +17,8 @@ public abstract class AbsBaseTest{
     injector = Guice.createInjector(new GuiceModule());
     injector.injectMembers(this);
     WebDriver driver = injector.getProvider(WebDriver.class).get();
-    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15L));
+    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60L));
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5L));
   }
 
   @AfterMethod

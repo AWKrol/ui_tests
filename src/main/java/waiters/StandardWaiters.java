@@ -17,7 +17,7 @@ public class StandardWaiters implements WaitersInt{
 
   @Override
   public boolean waitForCondition(ExpectedCondition condition) {
-    WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10L));
+    WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(IMPLICITLY_WAIT_SECOND));
     try {
       webDriverWait.until(condition);
       return true;

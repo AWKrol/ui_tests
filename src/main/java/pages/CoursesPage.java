@@ -11,9 +11,6 @@ import org.testng.asserts.SoftAssert;
 @PageValidation("//h1")
 public class CoursesPage extends AnyPageAbs<CoursesPage> {
 
-  //@Inject
-  //MainPage mainPage;
-
   @Inject
   public CoursesPage(WebDriver driver) {
     super(driver);
@@ -38,7 +35,6 @@ public class CoursesPage extends AnyPageAbs<CoursesPage> {
     WebElement element = driver.findElement(By.xpath(String.format("//label[text()='%s']/parent::div", name.getName())));
     boolean statusActual = Boolean.parseBoolean(element.getAttribute("value"));
     if (status != statusActual) element.click();
-    //if (status != statusActual) click(element);
   }
 
 }

@@ -22,7 +22,6 @@ public class CourseEarlyLatestTest extends AbsBaseTest {
   @Test
   public void courseEarlyLatest() throws IOException {
     mainPage.open()
-      .cookieOk(mainPage)
       .clickMoreCourses()
         .pageValidation("Каталог");
 

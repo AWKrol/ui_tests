@@ -54,7 +54,7 @@ public abstract class AnyPageAbs<T> extends CommonActions<T> {
 
   public T cookieOk(T t) {
     if (new StandardWaiters(driver).waitForElementClickable(buttonCookieOk))
-      buttonCookieOk.click();
+      click(buttonCookieOk);
 
     return t;
   }

@@ -17,9 +17,8 @@ public class RandomCourseCategoryTest extends AbsBaseTest {
   public void randomCourseCategory() throws InterruptedException {
 
     mainPage.open()
-      .cookieOk(mainPage)
       .selectRandomCourseCategory()
-      .pageValidation("Каталог")
+      .pageValidation("Каталог") // Добавить ожидание
         .assertCheckboxCoursesType(mainPage);
   }
 

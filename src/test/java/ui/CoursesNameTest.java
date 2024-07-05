@@ -19,14 +19,15 @@ public class CoursesNameTest extends AbsBaseTest{
 
   @Test
   public void coursesName() {
-    String courseName = "Java QA Engineer. Professional";
+    String courseName = "C++ Developer. Basic";
     mainPage
       .open()
-      .cookieOk(mainPage)
       .clickMoreCourses()
         .pageValidation("Каталог");
 
-    catalogCourseComponent.clickCourseByName(courseName).pageValidation(courseName);
+    catalogCourseComponent
+      .clickCourseByName(courseName)
+        .pageValidation(courseName);
   }
 
 }

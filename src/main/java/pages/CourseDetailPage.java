@@ -12,12 +12,5 @@ public class CourseDetailPage extends AnyPageAbs<CourseDetailPage> {
     super(driver);
   }
 
-  //@FindBy(xpath = "//h1")
-  //private WebElement courseHeader;
-  //
-  //public void assertHeaderCourse(String courseName) {
-  //Assert.assertEquals(courseHeader.getText(), courseName);
-  //}
-
 }
 

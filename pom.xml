@@ -9,9 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <testng.version>7.5</testng.version>
+        <maven.compiler.release>18</maven.compiler.release>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <testng.version>7.10.0</testng.version>
         <selenium.version>4.11.0</selenium.version>
         <webdrivermanager.version>5.7.0</webdrivermanager.version>
         <javafaker.version>1.0.2</javafaker.version>
@@ -76,7 +78,7 @@
             <id>prod</id>
             <properties>
                 <base.url>https://otus.ru</base.url>
-                <suiteXmlFile.profile>prod.xml</suiteXmlFile.profile>
+                <suiteXmlFile.profile>src/main/resources/suiteXml/prod.xml</suiteXmlFile.profile>
             </properties>
         </profile>
         <profile>

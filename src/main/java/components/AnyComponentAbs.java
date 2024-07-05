@@ -11,10 +11,6 @@ import java.util.Map;
 
 public abstract class AnyComponentAbs<T> extends CommonActions<T> {
 
-  //  {
-  //    this.waiters.waitForCondition(ExpectedConditions.visibilityOfElementLocated(getComponentLocator()));
-  //  }
-
   protected Actions actions;
 
   public AnyComponentAbs(WebDriver driver) {

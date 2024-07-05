@@ -43,7 +43,7 @@ public abstract class CommonActions<T> {
 
   public void click(WebElement element) {
     if (new StandardWaiters(driver).waitForElementClickable(element)) {
-      //      actions.moveToElement(element).build().perform();
+      actions.moveToElement(element).build().perform();
       element.click();
     } else {
       Assert.fail("element not clickable");
